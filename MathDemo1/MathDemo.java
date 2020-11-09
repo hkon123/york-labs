@@ -31,4 +31,28 @@ public class MathDemo
 	   System.out.println(Math.pow(base,exponent));
 	}
 	
+	public int generateLottoNumber(int top) {
+		return (int) (Math.random() * top) + 1;
+	}
+	
+	public int getMax(int num1, int num2, int num3) {
+		int result = Math.max(num1, num2);
+		result = Math.max(result, num3);
+		return result;
+	}
+	
+	public void bestOfThree() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("input number 1: ");
+		int num1 = sc.nextInt();
+		System.out.print("input number 2: ");
+		int num2 = sc.nextInt();
+		System.out.print("input number 3: ");
+		int num3 = sc.nextInt();
+		
+		System.out.printf("the largest number you entered is: %d%n", getMax(num1, num2, num3));
+	}
+	
+	
+	
 }

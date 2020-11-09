@@ -1,10 +1,13 @@
 
+
 public class TestKlingonShip {
 
 	public static void main(String[] args) {
 		
-		// Create LingonShip object, then test the methods
-
+		KlingonShip ks = new KlingonShip();
+		ks.displayKlingonDetails();
+		ks.promptSettings();
+		ks.displayKlingonDetails();
 	}
 
 }

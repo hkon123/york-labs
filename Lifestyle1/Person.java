@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 /**
  * To demonstrate boolean.
  * 
@@ -46,12 +46,26 @@ public class Person
 	
 	public void displayProfile()
 	{
-	   System.out.println("………Health Profile……");
+	   System.out.println("ï¿½ï¿½ï¿½Health Profileï¿½ï¿½");
 	   
 	   System.out.println("Healthy pulse check = " + checkPulse());
 	   System.out.print("Abusing Body = " + checkAbuser());
-	   
+	   System.out.printf("%nYour BMI is %.2f%n", getBMI());
 	}
 	
+	public void promptSetting() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Input your weight: ");
+		setWeight(sc.nextDouble());
+		System.out.print("input your height: ");
+		setHeight(sc.nextDouble());
+		System.out.print("input your weekly alcohol intake: ");
+		weeklyAlcholUnits = sc.nextInt();
+		System.out.print("input your resting pulse: ");
+		setPulse(sc.nextInt());
+	}
 	
+	public double getBMI() {
+		return (kgWeight/(cmHeight * cmHeight)*10000);
+	}
 }

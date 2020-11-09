@@ -13,8 +13,15 @@ public class Person
 	int weeklyAlcholUnits; // 1 pint = 2 units, 1 short = 1 unit)
 	final int RWAL = 21;   //RWAL - Recommended Weekly Alcohol Limit
 	int restPulse;
+	String name;
+	YorDate dateOfBirth;
+	
+	public Person(String nameIn, int dayOfBirth, int monthOfBirth, int yearOfBirth) {
+		name = nameIn;
+		dateOfBirth = new YorDate(dayOfBirth, monthOfBirth, yearOfBirth);
+	}
 
-    public void setHeight(double heightIn)
+	public void setHeight(double heightIn)
     {
         cmHeight= heightIn;
     }
@@ -46,10 +53,14 @@ public class Person
 	
 	public void displayProfile()
 	{
-	   System.out.println("………Health Profile……");
+	   System.out.println("ï¿½ï¿½ï¿½Health Profileï¿½ï¿½");
 	   
+	   System.out.printf("User: %s%n", name);
+	   System.out.printf("Date of birth: %d.%d.%d%n", dateOfBirth.getDay(), dateOfBirth.getMonth(), dateOfBirth.getYear());
 	   System.out.println("Healthy pulse check = " + checkPulse());
 	   System.out.print("Abusing Body = " + checkAbuser());
+	   
+	   
 	   
 	}
 	

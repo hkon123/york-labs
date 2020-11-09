@@ -5,6 +5,7 @@ public class TestMathDemo1 {
 		// Create MathDemo1 object and test the methods
 		MathDemo md = new MathDemo();
 		md.bestOfThree();
+		// comment
 
 	}
 

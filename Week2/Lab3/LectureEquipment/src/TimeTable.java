@@ -6,11 +6,11 @@ public class TimeTable {
 	
 	public TimeTable(int daysIn, int periodsIn) 
 	{
-		times = new ArrayList<>(daysIn);
+		times = new ArrayList<>();
 		for (int i=0 ; i<daysIn ; i++) 
 		{
 			times.add(new ArrayList<Booking>());
-			for (int j ; j<periodsIn ; j++) 
+			for (int j=0 ; j<periodsIn ; j++) 
 			{
 				times.get(i).add(new Booking());
 			}

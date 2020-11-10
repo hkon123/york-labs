@@ -21,4 +21,11 @@ public class SecondHandVehicle extends Vehicle {
 		}
 		
 	}
+	@Override
+	public String toString() {
+		return "Regnr: " + getRegNo() + "\n" + "Make: " + getMake() + "\n" + "Manufactured in: " 
+				+ getYearOfManufacture() + "(age: " + calculateAge() +")\n" + "value: " + getValue() + "\n" 
+				+ "number of owners: " + numberOfOwners + "\n"; 
+	}
+	
 }

@@ -36,4 +36,9 @@ public class Vehicle {
 	public int calculateAge() {
 		return currYear - yearOfManufacture;
 	}
+	
+	public String toString() {
+		return "Regnr: " + regNo + "\n" + "Make: " + make + "\n" + "Manufactured in: " 
+				+ yearOfManufacture + "(age: " + calculateAge() +")\n" + "value: " + value + "\n"; 
+	}
 }

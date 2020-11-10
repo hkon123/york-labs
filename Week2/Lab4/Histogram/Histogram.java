@@ -13,7 +13,7 @@ public class Histogram {
    public static void main( String args[] )
    {
       //Build an array.
-      int hArray[] = { 19, 3, 15, 7, 11, 9, 13, 5, 17, 1 };
+      int hArray[] = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
 
      //String to hold output
       String output = "Element\tValue\tHistogram";
@@ -29,10 +29,10 @@ public class Histogram {
       }
       //Create a new text area object to hold the text
       JTextArea outputArea = new JTextArea();
-      outputArea.setText( output );
+      outputArea.setText("test" );
 
       JOptionPane.showMessageDialog( null, outputArea,
-         "Histogram Printing Program",JOptionPane.INFORMATION_MESSAGE );
+         "test",JOptionPane.INFORMATION_MESSAGE );
 
    }
 }

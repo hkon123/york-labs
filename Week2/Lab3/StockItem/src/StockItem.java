@@ -4,6 +4,7 @@ public class StockItem {
 	private String stockNumber, name;
 	private double price;
 	private int totalStock;
+	private static double salesTax;
 	
 	public StockItem(String stockNumberIn, String nameIn, double priceIn) {
 		stockNumber = stockNumberIn;
@@ -38,6 +39,10 @@ public class StockItem {
 	
 	public double calculateTotalPrice() {
 		return price * totalStock;
+	}
+	
+	public static void setSalesTax(double taxIn) {
+		salesTax = taxIn;
 	}
 
 }

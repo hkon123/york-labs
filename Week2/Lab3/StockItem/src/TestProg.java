@@ -25,5 +25,7 @@ public class TestProg
 		 // Display the total price of all items in stock
 		 System.out.printf("The total value of all the %s in stock is %f%n", Stock.getName(), Stock.calculateTotalPrice());
 		 
+		 StockItem.setSalesTax(10);
+		 
 	 }
 }

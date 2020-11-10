@@ -14,6 +14,8 @@ public class Student
 	private String id;
 	// the amount of credits for study taken so far
 	private int credits;
+	private static double fee;
+	
 
 	/**
 	 * Create a new student with a given name and ID number.
@@ -81,5 +83,11 @@ public class Student
 		return name.substring(0,4) + id.substring(0,3);
 	}
 	
+	public static double getFee() {
+		return fee;
+	}
+	
+	public static void setFee(double feeIn) {
+	}
 	
 }

@@ -24,6 +24,7 @@ public class ChangingFace extends Application {
 		 face.setFill(Color.YELLOW);         
 		 face.setStroke(Color.RED);  
 		 
+		 
 		 // create and configure the circle for the right eye         
 		 Circle rightEye = new Circle(86, 100, 10);         
 		 rightEye.setFill(Color.YELLOW);         

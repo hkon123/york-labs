@@ -3,9 +3,9 @@ public class InterestAccount extends Account {
 
 	private double monthlyInterestRate;
 	
-	public InterestAccount(double balanceIn, double mirIn) {
+	public InterestAccount(double balanceIn, double monthlyInterestIn) {
 		super(balanceIn);
-		monthlyInterestRate = mirIn;
+		monthlyInterestRate = monthlyInterestIn;
 	}
 	
 	public void addMonthlyInterest() {
@@ -21,7 +21,7 @@ public class InterestAccount extends Account {
 	}
 	
 	public String toString() {
-		return super.toString() + "\n Monthly Interest Rate: " + monthlyInterestRate;
+		return super.toString() + "\nMonthly Interest Rate: " + monthlyInterestRate;
 	}
 	
 	

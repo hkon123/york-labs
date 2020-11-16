@@ -69,5 +69,20 @@ public class TestAccounts
      ia.addMonthlyInterest();
      System.out.println(ia);
      
+   //SpecialInterestAccount
+     System.out.println("\n\n--------SpecialInterestAccount:--------\n\n");
+     SpecialInterestAccount sia = new SpecialInterestAccount(50000, 0.15, 0.24);
+     sia.addMonthlyInterest();
+     System.out.println(sia);
+     sia.debit(1000);
+     sia.credit(5000);
+     sia.addMonthlyInterest();
+     System.out.println(sia);
+     sia.debit(1000);
+     sia.debit(4000);
+     sia.credit(5000);
+     sia.addMonthlyInterest();
+     System.out.println(sia);
+     
     }
 }

@@ -28,7 +28,15 @@
 			// create and configure a label which will cause the text to be displayed        
 			Button pushMeButton = new Button();         
 			pushMeButton.setText("Type something in the box then push me");         
-			pushMeButton.setOnAction(e -> pushMeLabel.setText("You entered: " + pushMeTextField.getText()));         
+			pushMeButton.setOnAction(e -> {		
+				pushMeLabel.setText("You entered: " + pushMeTextField.getText().toUpperCase());
+			});
+			
+			Button getLettersButton = new Button("Push me too!");
+			getLettersButton.setOnAction(e -> {
+				pushMeLabel.setText("Your text has " + pushMeTextField.getText().length() + " letters.");
+			});
+			
 			
 			// create and configure a VBox to hold our components               
 			VBox root = new VBox();         
@@ -36,7 +44,7 @@
 			root.setAlignment(Pos.CENTER); 
 			
 			//add the components to the VBox         
-			root.getChildren().addAll(pushMeTextField, pushMeButton, pushMeLabel); 
+			root.getChildren().addAll(pushMeTextField, pushMeButton, getLettersButton, pushMeLabel); 
 	
 	
 			// create a new scene         

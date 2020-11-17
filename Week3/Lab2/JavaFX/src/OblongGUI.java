@@ -45,8 +45,10 @@
 			calculateButton.setText("Calculate");        
 			calculateButton.setOnAction( e ->                     
 								{    // check that fields are not empty     
-									if(lengthField.getText().isEmpty() || heightField.getText().isEmpty())        
-									{                               
+									if((lengthField.getText().isEmpty() || heightField.getText().isEmpty()) || 
+											(Integer.parseInt(lengthField.getText()) ==0 || Integer.parseInt(heightField.getText()) ==0 ) ||
+											(lengthField.getText().equals(heightField.getText())))        
+									{                              
 										display.setText("Length and height must be entered");                       
 									}  
 									else                        
